@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALL APK TV Live Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">ALL APK TV</div>
+      <div class="status"><span></span> LIVE</div>
+    </header>
+
+    <section class="player-card">
+      <video id="video" controls autoplay playsinline></video>
+    </section>
+
+    <section class="input-card">
+      <input id="streamUrl" type="text" placeholder="Paste m3u8 URL here" />
+      <button id="playBtn">PLAY NOW</button>
+    </section>
+
+    <section class="channels">
+      <button class="channel" data-url="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8">Demo Channel</button>
+      <button class="channel" data-url="">Channel 2</button>
+      <button class="channel" data-url="">Channel 3</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
